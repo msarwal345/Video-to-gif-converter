@@ -7,7 +7,6 @@ import { Header } from "./components/Header";
 import { Resultimg } from "./components/Resultimage"; 
 import { Inputvideo } from "./components/Inputvideo"; 
 import { Dbutton } from "./components/Dbutton"; 
-import Loader from "./components/Loader";
   
 // Create the FFmpeg instance and load it 
 const ffmpeg = createFFmpeg({ log: true }); 
@@ -84,7 +83,7 @@ function App() {
     </div> 
   ) : ( 
       
-   <Loader/>
+   <p>Loading...</p>
   
   ); 
 } 
